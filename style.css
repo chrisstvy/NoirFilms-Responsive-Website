@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+    color: white;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: .1px solid white;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: black;
+    z-index: 10;
+}
+body {  
+    background-color: rgb(0, 0, 0);
+}
+.brand{
+    text-decoration: none;
+    font-size: 30px;
+}
+.brandName:hover{
+    color: red;
+}
+.brandName{
+    font-family: "Cinzel", serif;
+}
+#check{
+    display: none;
+}
+.icons
+{
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+.navlinks{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 1000;
+}
+.link:hover{
+    color: red;
+}
+.hero{
+    display: flex;
+    padding: 160px 8%;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    animation: fadeIn 1.5s ease;
+}
+.herotext{
+    flex: 1;
+}
+#herotitle
+{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+#heropara{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.herobutton{
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 0px;
+    cursor: pointer;
+    font-weight: 1000;
+    transition: 0.3;
+}
+.herobutton:hover{
+    background: red;
+    transform: scale(1.05);
+}
+.heroimage{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filmimage,
+.heroimage img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* films */
+
+.films{
+    padding: 0% 8%;
+    text-align: center;
+}
+.filmhead{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.filmcontainer{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.card{
+    background: white;
+    width: 450px;
+    padding: 20px;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.cardimg{
+   width: 100%; 
+}
+.filmname{
+    color: black;
+    margin: 15px 0 10px;
+}
+.year{
+    color: black;
+    margin-bottom: 15px;
+}
+.herobutton1{
+    padding: 12px 25px;
+    border: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    cursor: pointer;
+    font-weight: 1000;
+    transition: 0.3s;
+}
+.herobutton1:hover{
+    background: red;
+    transform: scale(1.05);
+}
+
+/* about section */
+
+.banner{
+    margin: 0px 8% 60px 8%;
+    padding: 60px 8%;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.45)), url(./images/lahaine.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.abouthead{
+    font-size: 35px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.aboutpara{
+    font-size: 20px;
+    margin-bottom: 25px;
+    max-width: 900px;
+    line-height: 1.8;
+    text-align:justify;
+    padding: 0 20px;
+}
+
+/* footer */
+.contactph{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+.contactmail{
+    font-size: 16px;
+    font-weight:500
+}
+.contact{
+    height: 200px;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contacthead,.subscribehead{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.smlinks{
+    margin-right: 10px;
+}
+.sicon{
+    margin-top: 20px;
+}
+.box{
+    display: flex;
+}
+.subinput{
+    padding: 5px;
+    border-radius: 0%;
+    color: black;
+    border: none;
+}
+.subbutton{
+    border-radius: 0%;
+    background-color: white;
+    color: black;
+
+}
+.footer{
+    padding: 15px;
+    background-color: white;
+}
+#footerr{
+    color: black;
+}
+
+
+/* animations */
+    
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* responsive style */
+
+@media (max-width:760px){
+    /* style for mobile and tablet */
+    .navbar{
+        padding: 20px 5%;
+}
+.brand,.icons{
+    font-size: 25px;
+}
+.icons{
+    display: flex;
+}
+#cancelation{
+    display: none;
+}
+#check:checked~.icons #menuicon{
+    display: none;
+}
+#check:checked~.icons #cancelation{
+    display: block;
+}
+#check:checked~.navlinks{
+    display: block;
+    height: fit-content;
+}
+.navlinks{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    padding-top: 10px;
+    margin-left: -20px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 0%;
+    display: none;
+}
+.links{
+    text-align: center;
+    padding: 5px 0px;
+}
+.hero{
+    flex-direction: column;
+    text-align: center;
+}
+#herotitle{
+    font-size: 35px;
+}
+#heropara{
+    font-size: 19px;
+}
+.heroimage{
+    margin-top: -38px;
+}
+/* about text mobile adjustments */
+.abouthead{
+    font-size: 28px;
+}
+.aboutpara{
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 12px;
+}
+    /* banner (about) adjustments for small screens */
+    .banner, #about.banner{
+        padding: 30px 5%;
+        min-height: auto;
+        background-position: center;
+        background-attachment: scroll;
+    }
+    .banner .abouthead, #about .abouthead{
+        font-size: 26px;
+    }
+    .banner .aboutpara, #about .aboutpara{
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0 12px;
+    }
+}
+
+
