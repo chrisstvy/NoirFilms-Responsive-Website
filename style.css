@@ -259,6 +259,75 @@ body {
 
 /* responsive style */
 
+@media (max-width: 900px) {
+    .contact {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 8%;
+    }
+
+    .contacttext,
+    .subscribe {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .sicon {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .box {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .subinput {
+        width: 100%;
+        min-width: 0;
+        padding: 12px 14px;
+    }
+
+    .subbutton {
+        width: 100%;
+        padding: 12px 14px;
+    }
+}
+
+@media (max-width: 580px) {
+    .contact {
+        padding: 30px 6%;
+    }
+
+    .contacthead,
+    .subscribehead {
+        font-size: 22px;
+    }
+
+    .contactph,
+    .contactmail {
+        font-size: 15px;
+    }
+
+    .smlinks {
+        margin-right: 12px;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    #footerr {
+        font-size: 14px;
+    }
+}
+
 @media (max-width:760px){
     /* style for mobile and tablet */
     .navbar{
