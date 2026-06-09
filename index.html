@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- navbar -->
@@ -56,7 +57,7 @@
          <br>
         <h2 class="filmhead">Film Shots</h2>
         <!-- Film Container -->
-        <div class="filmcontainer">
+        <div data-aos="flip-up" class="filmcontainer">
             <!-- cards -->
             <div class="card">
                 <img class="cardimg" src="./images/ragingbull.jpg" alt="">
@@ -114,4 +115,9 @@
             <p id="footerr">&copy; May 2026 design by Christy</p>
             </footer>
 </body>
+<!-- aos animation cdn script -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
 </html>
